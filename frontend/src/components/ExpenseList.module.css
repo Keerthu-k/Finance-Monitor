@@ -1,0 +1,381 @@
+.container {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07), 0 4px 16px rgba(99,102,241,0.08);
+  border: 1px solid #ede9fe;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.controlLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.selectWrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 8px 32px 8px 12px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: #374151;
+  background: #fafafa;
+  cursor: pointer;
+  outline: none;
+  min-width: 130px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  font-weight: 500;
+}
+
+.select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.1);
+  background: #fff;
+}
+
+.chevron {
+  position: absolute;
+  right: 10px;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+/* Date picker */
+.datePickerWrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.datePicker {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 8px 12px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: #374151;
+  background: #fafafa;
+  cursor: pointer;
+  outline: none;
+  min-width: 150px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  font-weight: 500;
+}
+
+.datePicker:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.1);
+  background: #fff;
+}
+
+.datePicker::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  color: #9ca3af;
+}
+
+.clearDateBtn {
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 4px 8px;
+  transition: color 0.15s;
+}
+
+.clearDateBtn:hover {
+  color: #6366f1;
+}
+
+/* Total box */
+.totalBox {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: linear-gradient(135deg, #eef2ff, #ede9fe);
+  border: 1px solid #c7d2fe;
+  border-radius: 10px;
+  padding: 8px 16px;
+}
+
+.totalLabel {
+  font-size: 0.72rem;
+  color: #6366f1;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.totalAmount {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #4338ca;
+  line-height: 1.2;
+}
+
+/* Empty state */
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 0;
+  gap: 10px;
+  color: #9ca3af;
+}
+
+.emptyIcon {
+  font-size: 2rem;
+}
+
+.empty p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Table */
+.tableWrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid #f3f4f6;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table thead tr {
+  background: #f9fafb;
+}
+
+.table th {
+  text-align: left;
+  padding: 10px 14px;
+  color: #9ca3af;
+  font-weight: 700;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  border-bottom: 1px solid #f3f4f6;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 13px 14px;
+  border-bottom: 1px solid #f9fafb;
+  vertical-align: middle;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table tbody tr {
+  transition: background 0.1s;
+}
+
+.table tbody tr:hover td {
+  background: #fafafe;
+}
+
+/* Date cell */
+.dateCell {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.dateDay {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e1b4b;
+}
+
+.dateMonYear {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Description */
+.desc {
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #374151;
+}
+
+/* Amount */
+.right {
+  text-align: right !important;
+}
+
+.amount {
+  font-weight: 700;
+  color: #1e1b4b;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+/* Empty state */
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  gap: 8px;
+  color: #9ca3af;
+}
+
+.emptyIcon { font-size: 1.8rem; }
+.empty p { margin: 0; font-size: 0.9rem; }
+
+/* Skeleton loader */
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+.skeleton {
+  display: inline-block;
+  height: 14px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 800px 100%;
+  animation: shimmer 1.4s infinite linear;
+}
+
+.skeletonRow td { padding: 14px 14px; }
+.skW1 { width: 48px; }
+.skW2 { width: 72px; }
+.skW3 { width: 140px; }
+.skW4 { width: 60px; }
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.paginationBtn {
+  padding: 8px 14px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 6px;
+  background: #fff;
+  color: #374151;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.paginationBtn:hover:not(:disabled) {
+  border-color: #6366f1;
+  background: #eef2ff;
+  color: #6366f1;
+}
+
+.paginationBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.paginationInfo {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Expense rows */
+.expenseRow {
+  background: #fff;
+  transition: background 0.1s;
+}
+
+.expenseRow:hover td {
+  background: #fafafe;
+}
+
+/* Actions column */
+.actionsHeader {
+  text-align: center !important;
+  white-space: nowrap;
+}
+
+.actionsCell {
+  text-align: center;
+  white-space: nowrap;
+  padding: 8px 10px !important;
+}
+
+.editBtn,
+.deleteBtn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 5px 7px;
+  border-radius: 7px;
+  font-size: 1rem;
+  line-height: 1;
+  transition: background 0.15s, transform 0.1s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editBtn:hover {
+  background: #eef2ff;
+  transform: scale(1.15);
+}
+
+.deleteBtn:hover {
+  background: #fee2e2;
+  transform: scale(1.15);
+}
+
